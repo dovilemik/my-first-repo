@@ -1,14 +1,14 @@
 // 1 užduotis - Kintamieji
-let vardas = 'Dovilė';
-let amzius = 30;
-let arPilnametis = true;
+const vardas = 'Dovilė';
+const amzius = 30;
+const arPilnametis = true;
 
 console.log(vardas);
 console.log(amzius);
 console.log(arPilnametis);
 
 // 2 užduotis - Kintamieji ir kontrolės sakiniai
-let person = {
+const person = {
     age: 18,
     isCitizen: true,
     daysLivedInCountry: 15,
@@ -22,9 +22,11 @@ if (person.age >= 18 && person.isCitizen == true && person.daysLivedInCountry >=
 
 // 3 užduotis - Kintamieji ir kontrolės sakiniai
 
-let age = 51;
-let bmi = 29;
-let smokes = false;
+const age = 62;
+const bmi = 29;
+const smokes = false;
+let riskLevel;
+let advice;
 
 if (age < 30 && bmi < 25 && smokes === false) {
     riskLevel = 'Maža rizika';
