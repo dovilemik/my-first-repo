@@ -1,4 +1,4 @@
-// 1 uzduotis - Kintamieji
+// 1 užduotis - Kintamieji
 let vardas = 'Dovilė';
 let amzius = 30;
 let arPilnametis = true;
