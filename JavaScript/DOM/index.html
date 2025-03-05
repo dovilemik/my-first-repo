@@ -1,28 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM manipuliacija</title>
+    <title>Removing Event Listeners Example</title>
 </head>
 <body>
+    <button id="click-me">Click Me!</button>
+    <button id="remove-listener">Remove Listener</button>
+    <p id="message"></p>
 
-    <h1>
+    <script>
+        // Adding and removing an event listener
+        const button = document.getElementById('click-me');
+        const message = document.getElementById('message');
 
-    </h1>
-    
-    <h1>
+        function showMessage() {
+            message.innerText = 'Button was clicked!';
+        }
 
-    </h1>
+        button.addEventListener('click', showMessage);
 
-    <h2 class="pavarde">
-
-    </h2>
-
-    <p id="apie-mane">
-
-    </p>
-
-    <script src="script.js"></script>
+        const removeButton = document.getElementById('remove-listener');
+        removeButton.addEventListener('click', function() {
+            button.removeEventListener('click', showMessage);
+            message.innerText = '';
+        });
+    </script>
 </body>
 </html>
