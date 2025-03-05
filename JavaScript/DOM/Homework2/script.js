@@ -1,3 +1,6 @@
+
+// Užduotis 2 - EventListeners ir dinamiška DOM manipuliacija
+
 const body = document.getElementById('body');
 
 const firstParagraph = document.getElementById("first");
