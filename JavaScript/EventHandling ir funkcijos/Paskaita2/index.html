@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script</title>
+    <style>
+        .error {
+            border: 1px solid red;
+        }
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="mano-forma" novalidate>
+        <div id="vardo-div">
+            <label>
+                Vardas:
+                <input id="vardas" required name="vardas" type="text">
+            </label>
+        </div>
+
+        <div id="pavardes-div">
+            <label>
+                Pavarde:
+                <input required name="pavarde" type="text">
+            </label>
+        </div>
+
+        <div id="amzius-div">
+            <label>
+                Amzius:
+                <input name="amzius" type="number">
+            </label>
+        </div>
+        <button type="submit">Pateikti</button>
+    </form>
+
+    <div id="users-list">
+        
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
