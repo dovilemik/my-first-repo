@@ -13,6 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log('Rezultatas:', result)
     }
 
-    calculate(7, 1000, showResult);
+    calculate(5, 1000, showResult);
 });
 
