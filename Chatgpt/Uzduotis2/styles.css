@@ -1,0 +1,50 @@
+/* Bendrieji stiliai */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    text-align: center;
+}
+
+/* Animacija, kuri keičia spalvą ir dydį */
+@keyframes colorSizeChange {
+    0% {
+        transform: scale(1); /* Pradinis dydis */
+        background-color: #4CAF50; /* Pradinė spalva */
+    }
+    50% {
+        transform: scale(1.5); /* Vidurinis dydis */
+        background-color: #FF6347; /* Vidutinė spalva */
+    }
+    100% {
+        transform: scale(1); /* Pabaigos dydis */
+        background-color: #4CAF50; /* Pabaigos spalva */
+    }
+}
+
+/* Mygtuko stilius ir animacija */
+button {
+    animation: colorSizeChange 3s ease-in-out infinite;
+    background-color: #4CAF50; /* Pradinė spalva */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 200px;
+    box-sizing: border-box;
+    margin: 20px auto;
+}
+
+button:hover {
+    background-color: #45a049;
+}

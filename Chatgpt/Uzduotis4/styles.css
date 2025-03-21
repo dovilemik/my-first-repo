@@ -1,0 +1,67 @@
+/* Bendrieji stiliai */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Navigacija */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Pagrindinis turinys */
+.main-content {
+    display: flex;
+    margin: 20px;
+}
+
+/* Šoninė juosta */
+aside {
+    width: 25%;
+    background-color: #e2e2e2;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+/* Pagrindinis skyrius */
+section {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Poraštė */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
